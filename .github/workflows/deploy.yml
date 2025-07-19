@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set vars
-        run:
+        run: |
           if[[ $GITHUB_REF == 'refs/heads/prod' ]]; then
             echo "prod" > .workspace
           else
